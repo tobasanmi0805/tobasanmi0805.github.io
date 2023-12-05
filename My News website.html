@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News Website</title>
+  <style>
+    /* Basic styling for layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .frame {
+      width: 45%;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+    .frame img,
+    .frame video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>News Website</h1>
+  </header>
+
+  <nav>
+    <!-- Navigation Links (Add your links here) -->
+    <a href="#">Home</a>
+    <a href="#">Politics</a>
+    <a href="#">Technology</a>
+    <a href="#">Entertainment</a>
+  </nav>
+
+  <section>
+    <div class="frame">
+      <!-- Image Frame -->
+      <img src="https://api.unsplash.com/search/photos?query=minimal">
+
+    </div>
+
+    <div class="frame">
+      <!-- Video Frame -->
+      <video controls>
+        <source src="https://www.example.com/sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+</body>
+</html>
